@@ -22,9 +22,6 @@ LOCAL_SRC_FILES := sync_clock_jni.c sync_clock.c player.c
 
 LOCAL_CFLAGS := -g -DUSE_LIBLOG -Werror
 
-# needed for logcat
-LOCAL_SHARED_LIBRARIES := libcutils
-
 LOCAL_LDLIBS := -lOpenSLES -llog
 
 include $(BUILD_SHARED_LIBRARY)
